@@ -1,0 +1,15 @@
+net.codjo.notification.server
+
+net.codjo.notification.server.audit
+	-> net.codjo.workflow.common.message
+
+net.codjo.notification.server.plugin
+	-> net.codjo.agent
+	-> net.codjo.agent.test
+	-> net.codjo.notification.common.message
+	-> net.codjo.security.common.api
+	-> net.codjo.security.server.api
+	-> net.codjo.test.common
+	-> net.codjo.workflow.common.util
+	-> net.codjo.workflow.server.audit
+	-> net.codjo.workflow.server.plugin

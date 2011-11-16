@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     | POM Relationships
+     -->
+
+    <parent>
+        <groupId>net.codjo.pom</groupId>
+        <artifactId>codjo-pom-library</artifactId>
+        <version>SNAPSHOT</version>
+    </parent>
+    <groupId>net.codjo.notification</groupId>
+    <artifactId>codjo-notification</artifactId>
+    <version>1.7-SNAPSHOT</version>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>net.codjo.notification</groupId>
+                <artifactId>codjo-notification-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        
+    </dependencies>
+
+    <!--
+     | Build Settings
+     -->
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>codjo-notification-common</module>
+        <module>codjo-notification-server</module>
+        <module>codjo-notification-gui</module>
+    </modules>
+
+    <!--
+    | Project Information
+    -->
+
+    <name>Lib &gt; Notification</name>
+    <description>Module de gestion des notifications</description>
+    <inceptionYear>2007</inceptionYear>
+
+    <!--
+    | Environment Information
+    -->
+
+    <scm>
+        <connection>scm:git:https://github.com/codjo/codjo-notification.git</connection>
+        <developerConnection>scm:git:https://github.com/codjo/codjo-notification.git</developerConnection>
+        <url>https://github.com/codjo/codjo-notification</url>
+    </scm>
+
+</project>

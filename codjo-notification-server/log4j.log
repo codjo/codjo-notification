@@ -1,0 +1,7 @@
+18:07:59,373 INFO  net.codjo.agent.imtp.NoConnectionIMTPManager - Demarrage du 'NoConnectionIMTPManager' : Communication intra-platform bloquee
+18:07:59,763 INFO  net.codjo.agent.imtp.NoConnectionIMTPManager - Demarrage du 'NoConnectionIMTPManager' : Communication intra-platform bloquee
+18:07:59,826 INFO  net.codjo.notification.server.plugin.NotificationJobAgent - Recuperation des notifications offline pour 'smith' (annule car premiere connexion)
+18:07:59,904 INFO  net.codjo.agent.imtp.NoConnectionIMTPManager - Demarrage du 'NoConnectionIMTPManager' : Communication intra-platform bloquee
+18:07:59,920 INFO  net.codjo.notification.server.plugin.NotificationJobAgent - Recuperation des 0 notifications offline pour 'smith' du Thu Jan 01 01:00:00 CET 1970 au Thu Jan 01 01:00:10 CET 1970
+18:08:00,013 INFO  net.codjo.agent.imtp.NoConnectionIMTPManager - Demarrage du 'NoConnectionIMTPManager' : Communication intra-platform bloquee
+18:08:00,029 INFO  net.codjo.notification.server.plugin.NotificationJobAgent - Recuperation des 0 notifications offline pour 'smith' du Tue Apr 24 00:00:00 CEST 2007 au 2007-05-01
