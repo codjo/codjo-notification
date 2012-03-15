@@ -11,7 +11,7 @@
     <parent>
         <groupId>net.codjo.notification</groupId>
         <artifactId>codjo-notification</artifactId>
-        <version>1.7-SNAPSHOT</version>
+        <version>1.7</version>
     </parent>
     <dependencies>
 
