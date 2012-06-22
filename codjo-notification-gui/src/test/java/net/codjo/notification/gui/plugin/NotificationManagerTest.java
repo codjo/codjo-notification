@@ -18,11 +18,12 @@ public class NotificationManagerTest extends TestCase {
 
 
     public void test_interpretMessage_unknownTaskId() throws Exception {
-        NotificationRequest notificationRequest =
-              new NotificationRequest("unknownTaskId");
+        NotificationRequest notificationRequest = new NotificationRequest("unknownTaskId");
 
         manager.setDefaultNotificationHandler(new DefaultNotificationHandler(getOperations()));
         manager.getListener().receive(notificationRequest);
+
+        Thread.sleep(100);
 
         assertEquals(1, defaultGuiContext.getDesktopPane().getAllFrames().length);
         JInternalFrame frame = defaultGuiContext.getDesktopPane().getAllFrames()[0];
@@ -31,17 +32,16 @@ public class NotificationManagerTest extends TestCase {
 
 
     public void test_interpretMessage_welcome() throws Exception {
-        NotificationRequest notificationRequest =
-              new NotificationRequest("displayWelcomeMessage");
+        NotificationRequest notificationRequest = new NotificationRequest("displayWelcomeMessage");
 
         manager.addNotificationHandler("displayWelcomeMessage",
                                        new WelcomeNotificationHandler(getOperations()));
         manager.getListener().receive(notificationRequest);
 
+        Thread.sleep(100);
+
         assertEquals(1, defaultGuiContext.getDesktopPane().getAllFrames().length);
         JInternalFrame frame = defaultGuiContext.getDesktopPane().getAllFrames()[0];
-
-        Thread.sleep(30);
 
         assertEquals("Bienvenue !", frame.getTitle());
     }
